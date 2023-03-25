@@ -1,42 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Компонент «Оповещения»</title>
-  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <title>Позиционирование</title>
+  <script src="test.js"></script>
 </head>
+
 <body>
-  <section class="notifications">
-    <h2>Оповещения</h2>
-    <div class="notifications-item">
-      <img src="assets/images/star.png" alt="Уведомление">
-      <div>
-        <h3>Никита Михайлов добавил новое упражнение</h3>
-        <p><small>Только что</small></p>
-      </div>
-    </div>
-    <div class="notifications-item">
-      <img src="assets/images/star.png" alt="Уведомление">
-      <div>
-        <h3>Новый комментарий от пользователя Константин Константинопольский</h3>
-        <p><small>20 минут назад</small></p>
-      </div>
-    </div>
-    <div class="notifications-item">
-      <img src="assets/images/star.png" alt="Уведомление">
-      <div>
-        <h3>В курс <strong>CSS: Позиционирование</strong> был добавлен новый урок</h3>
-        <p><small>8 часов назад</small></p>
-      </div>
-    </div>
-    <div class="notifications-item">
-      <img src="assets/images/star.png" alt="Уведомление">
-      <div>
-        <h3>В блоге новая статья</h3>
-        <p><small>вчера</small></p>
-      </div>
-    </div>
-  </section>
+  <div class="flex-container">
+    <div class="flex-item bg-blue color-white progress-20">Loading 20%</div>
+    <div class="flex-item bg-blue color-white progress-50">Loading 50%</div>
+    <div class="flex-item bg-blue color-white progress-25">Loading 25%</div>
+    <div class="flex-item bg-blue color-white progress-69">Loading 69%</div>
+    <div class="flex-item bg-blue color-white progress-33">Loading 33%</div>
+  </div>
 </body>
+
 </html>

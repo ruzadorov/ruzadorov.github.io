@@ -1,57 +1,72 @@
-body {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+
+  padding: 30px 50px;
+}
+
+.flex-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
 
-  color: #1e293b;
-  font: 18px/1.5 sans-serif;
+  box-sizing: border-box;
+  height: 50px;
 
-  background: #f8fafc;
+  margin-bottom: 10px;
+  padding-left: 20px;
+
+  font-weight: bold;
+
+  border: 2px solid;
+  border-radius: 5px;
 }
 
-small {
-  color: #626976;
+.bg-blue {
+
+  background: #a2cbfa;
+  border-color: #4390e1;
 }
 
-.notifications {
-  width: 500px;
-  height: 500px;
-  padding: 1rem;
+.color-white {
+  color: #fff;
+}
 
+.progress-20 {
   /* BEGIN (write your solution here) */
-  overflow-y: auto;
+
   /* END */
 
-  background: #fff;
-  border: 1px solid rgb(98 105 118 / 16%);
-  box-shadow: rgb(30 41 59 / 4%) 0 2px 4px 0;
+  width: 20%;
 }
 
-.notifications-item {
-  padding: 1rem 0;
-
-  border-bottom: 1px solid rgb(98 105 118 / 16%);
-}
-
-.notifications-item:last-child {
-  padding-bottom: 0;
-
-  border: none;
-}
-
-.notifications-item h3 {
-  margin: 0;
-
+.progress-25 {
   /* BEGIN (write your solution here) */
-  overflow: hidden;
-  white-space:nowrap;
-  text-overflow: ellipsis;
+  order: 1;
   /* END */
+  width: 25%;
 }
 
-.notifications-item p {
-  margin: 0;
+.progress-33 {
+  /* BEGIN (write your solution here) */
+  order: 2;
+  /* END */
+  width: 33%;
+}
+
+.progress-50 {
+  /* BEGIN (write your solution here) */
+  order: 3;
+  /* END */
+
+  width: 50%;
+}
+
+.progress-69 {
+  /* BEGIN (write your solution here) */
+  order: 4;
+  /* END */
+
+  width: 69%;
 }
